@@ -1,0 +1,454 @@
+{
+  "lessons": [
+    {
+      "id": "intro",
+      "name": "Вводный урок",
+      "order": 0,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": ""
+    },
+    {
+      "id": "oppitunti-1",
+      "name": "Oppitunti 1",
+      "order": 1,
+      "pdf_main": "https://drive.google.com/file/d/1ff_ZIybf3o4wAZcLEAMWY_BgABBzIrnf/view?usp=drive_link",
+      "pdf_exercises": "https://drive.google.com/file/d/15R2cCZMebBUHQRUHzSXPxjuD97pp7LIH/view?usp=drive_link",
+      "pdf_answers": "https://drive.google.com/file/d/1ZkUKS2QmGqHa9SrjqX-jnqWobl1-AdLJ/view?usp=drive_link",
+      "audio": "https://drive.google.com/file/d/1-PLaUCh_tgCGt4BBk9K894rdflzmHx0E/view?usp=drive_link",
+      "flashcard": "https://quizlet.com/fi/968660268/oppitunti-1-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-2",
+      "name": "Oppitunti 2",
+      "order": 2,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/970250774/oppitunti-2-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-3",
+      "name": "Oppitunti 3",
+      "order": 3,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/971333109/oppitunti-3-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-4",
+      "name": "Oppitunti 4",
+      "order": 4,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/971340547/oppitunti-4-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-5",
+      "name": "Oppitunti 5",
+      "order": 5,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/973476822/oppitunti-5-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-6",
+      "name": "Oppitunti 6",
+      "order": 6,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/974644057/oppitunti-6-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-7",
+      "name": "Oppitunti 7",
+      "order": 7,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/975162581/oppitunti-7-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-8",
+      "name": "Oppitunti 8",
+      "order": 8,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/976502257/oppitunti-8-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-9",
+      "name": "Oppitunti 9",
+      "order": 9,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/976918816/oppitunti-9-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-10",
+      "name": "Oppitunti 10",
+      "order": 10,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/977503691/oppitunti-10-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-11",
+      "name": "Oppitunti 11",
+      "order": 11,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/979096793/oppitunti-11-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-12",
+      "name": "Oppitunti 12",
+      "order": 12,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/980322422/oppitunti-12-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-13",
+      "name": "Oppitunti 13",
+      "order": 13,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/982170040/oppitunti-13-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-14",
+      "name": "Oppitunti 14",
+      "order": 14,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/982924883/oppitunti-14-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-15",
+      "name": "Oppitunti 15",
+      "order": 15,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/984280249/oppitunti-15-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-16",
+      "name": "Oppitunti 16",
+      "order": 16,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/985883332/oppitunti-16-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-17",
+      "name": "Oppitunti 17",
+      "order": 17,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/986949262/oppitunti-17-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-18",
+      "name": "Oppitunti 18",
+      "order": 18,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/987609206/oppitunti-18-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-19",
+      "name": "Oppitunti 19",
+      "order": 19,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/988796993/oppitunti-19-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-20",
+      "name": "Oppitunti 20",
+      "order": 20,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/989355195/oppitunti-20-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-21",
+      "name": "Oppitunti 21",
+      "order": 21,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/989845748/oppitunti-21-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-22",
+      "name": "Oppitunti 22",
+      "order": 22,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/990311882/oppitunti-22-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-23",
+      "name": "Oppitunti 23",
+      "order": 23,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/991454999/oppitunti-23-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-24",
+      "name": "Oppitunti 24",
+      "order": 24,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/992317922/oppitunti-24-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-25",
+      "name": "Oppitunti 25",
+      "order": 25,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/993293593/oppitunti-25-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-26",
+      "name": "Oppitunti 26",
+      "order": 26,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/994195854/oppitunti-26-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-27",
+      "name": "Oppitunti 27",
+      "order": 27,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/994788671/oppitunti-27-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-28",
+      "name": "Oppitunti 28",
+      "order": 28,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/995910955/oppitunti-28-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-29",
+      "name": "Oppitunti 29",
+      "order": 29,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/996567033/oppitunti-29-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-30",
+      "name": "Oppitunti 30",
+      "order": 30,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/997451079/oppitunti-30-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-31",
+      "name": "Oppitunti 31",
+      "order": 31,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/998755933/oppitunti-31-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-32",
+      "name": "Oppitunti 32",
+      "order": 32,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/999689907/oppitunti-32-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-33",
+      "name": "Oppitunti 33",
+      "order": 33,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/1000676838/oppitunti-33-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-34",
+      "name": "Oppitunti 34",
+      "order": 34,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/1001772063/oppitunti-34-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-35",
+      "name": "Oppitunti 35",
+      "order": 35,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/1002810326/oppitunti-35-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-36",
+      "name": "Oppitunti 36",
+      "order": 36,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/1003843974/oppitunti-36-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-37",
+      "name": "Oppitunti 37",
+      "order": 37,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/1005012561/oppitunti-37-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-38",
+      "name": "Oppitunti 38",
+      "order": 38,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/1005996768/oppitunti-38-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-39",
+      "name": "Oppitunti 39",
+      "order": 39,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/1006852322/oppitunti-39-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-40",
+      "name": "Oppitunti 40",
+      "order": 40,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/1007863902/oppitunti-40-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-41",
+      "name": "Oppitunti 41",
+      "order": 41,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/1008853931/oppitunti-41-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-42",
+      "name": "Oppitunti 42",
+      "order": 42,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/1013226128/oppitunti-42-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-43",
+      "name": "Oppitunti 43",
+      "order": 43,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/1014503033/oppitunti-43-flash-cards/?new"
+    },
+    {
+      "id": "oppitunti-44",
+      "name": "Oppitunti 44",
+      "order": 44,
+      "pdf_main": "",
+      "pdf_exercises": "",
+      "pdf_answers": "",
+      "audio": "",
+      "flashcard": "https://quizlet.com/fi/1015342901/oppitunti-44-flash-cards/?new"
+    }
+  ]
+}
