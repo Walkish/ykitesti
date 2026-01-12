@@ -208,7 +208,7 @@ def generate_lesson_html(lesson):
     
     <footer>
         <div class="container">
-            <p>&copy; 2024 YKI Test Lessons</p>
+            <p>&copy; 2026 YKI Test Lessons</p>
         </div>
     </footer>
 </body>
