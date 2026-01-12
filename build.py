@@ -217,41 +217,85 @@ def generate_lesson_html(lesson):
 
 def main():
     """Main function to generate static site"""
-    print("Generating static site...")
-    
-    # Create output directory
-    output_dir = Path('docs')
-    output_dir.mkdir(exist_ok=True)
-    
-    # Create CSS directory
-    css_dir = output_dir / 'css'
-    css_dir.mkdir(exist_ok=True)
-    
-    # Load lessons
-    lessons = load_lessons()
-    lessons = sorted(lessons, key=lambda x: x.get('order', 999))
-    
-    # Generate index.html
-    print("Generating index.html...")
-    index_html = generate_index_html(lessons)
-    with open(output_dir / 'index.html', 'w', encoding='utf-8') as f:
-        f.write(index_html)
-    
-    # Generate individual lesson pages
-    for lesson in lessons:
-        lesson_id = lesson.get('id', '')
-        print(f"Generating {lesson_id}.html...")
-        lesson_html = generate_lesson_html(lesson)
-        with open(output_dir / f'{lesson_id}.html', 'w', encoding='utf-8') as f:
-            f.write(lesson_html)
-    
-    # Copy CSS file
-    print("Copying CSS...")
+    import sys
     import shutil
-    shutil.copy('static/css/style.css', css_dir / 'style.css')
     
-    print(f"\n✅ Static site generated in '{output_dir}' directory!")
-    print("You can now push to GitHub and enable GitHub Pages.")
+    try:
+        print("Generating static site...")
+        
+        # Create output directory
+        output_dir = Path('docs')
+        output_dir.mkdir(exist_ok=True)
+        
+        # Create CSS directory
+        css_dir = output_dir / 'css'
+        css_dir.mkdir(exist_ok=True)
+        
+        # Load lessons
+        print("Loading lessons from lessons.json...")
+        lessons = load_lessons()
+        if not lessons:
+            print("ERROR: No lessons found in lessons.json!")
+            sys.exit(1)
+        
+        print(f"Loaded {len(lessons)} lessons")
+        lessons = sorted(lessons, key=lambda x: x.get('order', 999))
+        
+        # Generate index.html
+        print("Generating index.html...")
+        index_html = generate_index_html(lessons)
+        index_path = output_dir / 'index.html'
+        with open(index_path, 'w', encoding='utf-8') as f:
+            f.write(index_html)
+        print(f"✅ Created {index_path}")
+        
+        # Generate individual lesson pages
+        generated_count = 0
+        for lesson in lessons:
+            lesson_id = lesson.get('id', '')
+            if not lesson_id:
+                print(f"WARNING: Lesson missing ID, skipping: {lesson.get('name', 'Unknown')}")
+                continue
+            print(f"Generating {lesson_id}.html...")
+            lesson_html = generate_lesson_html(lesson)
+            lesson_path = output_dir / f'{lesson_id}.html'
+            with open(lesson_path, 'w', encoding='utf-8') as f:
+                f.write(lesson_html)
+            generated_count += 1
+        
+        print(f"✅ Generated {generated_count} lesson pages")
+        
+        # Copy CSS file
+        css_source = Path('static/css/style.css')
+        if not css_source.exists():
+            print(f"ERROR: CSS file not found at {css_source}")
+            sys.exit(1)
+        
+        print("Copying CSS...")
+        shutil.copy(css_source, css_dir / 'style.css')
+        print(f"✅ Copied CSS to {css_dir / 'style.css'}")
+        
+        # Verify output
+        if not (output_dir / 'index.html').exists():
+            print("ERROR: index.html was not created!")
+            sys.exit(1)
+        
+        if not (css_dir / 'style.css').exists():
+            print("ERROR: style.css was not copied!")
+            sys.exit(1)
+        
+        print(f"\n✅ Static site generated successfully in '{output_dir}' directory!")
+        print(f"   - {generated_count + 1} HTML files")
+        print(f"   - 1 CSS file")
+        
+    except FileNotFoundError as e:
+        print(f"ERROR: File not found: {e}")
+        sys.exit(1)
+    except Exception as e:
+        print(f"ERROR: {e}")
+        import traceback
+        traceback.print_exc()
+        sys.exit(1)
 
 if __name__ == '__main__':
     main()
