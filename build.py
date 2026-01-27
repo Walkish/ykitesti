@@ -23,8 +23,58 @@ def escape_html(text):
             .replace('"', '&quot;')
             .replace("'", '&#39;'))
 
-def generate_index_html(lessons):
-    """Generate the main index page"""
+def generate_main_index_html():
+    """Generate the main landing page with links to different sections"""
+    html = '''<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finnish Learning Resources</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Finnish Learning Resources</h1>
+            <nav>
+                <a href="index.html">Home</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="main-page">
+            <h2>Welcome to Finnish Learning Resources</h2>
+            <p class="intro-text">Choose a section to explore:</p>
+            
+            <div class="sections-grid">
+                <a href="yki-test.html" class="section-card">
+                    <div class="section-icon">📚</div>
+                    <h3>YKI Test</h3>
+                    <p>Practice lessons and materials for the YKI Finnish language test</p>
+                </a>
+                
+                <a href="finnish-grammar.html" class="section-card">
+                    <div class="section-icon">📖</div>
+                    <h3>Finnish Grammar</h3>
+                    <p>Learn Finnish grammar rules, including the K-P-T consonant gradation rule</p>
+                </a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Finnish Learning Resources</p>
+        </div>
+    </footer>
+</body>
+</html>'''
+    return html
+
+def generate_yki_test_html(lessons):
+    """Generate the YKI test lessons catalog page"""
     lessons_html = ""
     for lesson in lessons:
         links_html = ""
@@ -69,7 +119,7 @@ def generate_index_html(lessons):
 <body>
     <header>
         <div class="container">
-            <h1>YKI Test Lessons</h1>
+            <h1>Finnish Learning Resources</h1>
             <nav>
                 <a href="index.html">Home</a>
             </nav>
@@ -78,17 +128,149 @@ def generate_index_html(lessons):
     
     <main class="container">
         <div class="lessons-catalog">
-    <h2>Lessons Catalog</h2>
-    <div class="lessons-grid">
-{lessons_html}    </div>
-</div>
+            <a href="index.html" class="back-link">← Back to Home</a>
+            <h2>YKI Test Lessons Catalog</h2>
+            <div class="lessons-grid">
+{lessons_html}            </div>
+        </div>
     </main>
     
     <footer>
         <div class="container">
-            <p>&copy; 2024 YKI Test Lessons</p>
+            <p>&copy; 2026 Finnish Learning Resources</p>
         </div>
     </footer>
+</body>
+</html>'''
+    return html
+
+def generate_finnish_grammar_html():
+    """Generate the Finnish grammar page with K-P-T rule"""
+    html = '''<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finnish Grammar - K-P-T Rule</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Finnish Learning Resources</h1>
+            <nav>
+                <a href="index.html">Home</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="grammar-page">
+            <a href="index.html" class="back-link">← Back to Home</a>
+            <h2>Finnish Grammar</h2>
+            
+            <section class="grammar-section">
+                <h3>The K-P-T Rule (KPT-sääntö)</h3>
+                
+                <div class="grammar-content">
+                    <h4>What is Consonant Gradation?</h4>
+                    <p>Consonant gradation (astevaihtelu) is one of the most important features of Finnish grammar. It involves changing the consonants k, p, and t in the stem of a word when certain endings are added.</p>
+                    
+                    <h4>The Three Grades</h4>
+                    <div class="rule-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Strong Grade</th>
+                                    <th>Weak Grade</th>
+                                    <th>Example</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>kk</td>
+                                    <td>k</td>
+                                    <td>pankki → pankin (bank)</td>
+                                </tr>
+                                <tr>
+                                    <td>pp</td>
+                                    <td>p</td>
+                                    <td>kuppi → kupin (cup)</td>
+                                </tr>
+                                <tr>
+                                    <td>tt</td>
+                                    <td>t</td>
+                                    <td>katti → katin (cat)</td>
+                                </tr>
+                                <tr>
+                                    <td>k</td>
+                                    <td>- (disappears)</td>
+                                    <td>puku → puvun (dress)</td>
+                                </tr>
+                                <tr>
+                                    <td>p</td>
+                                    <td>v</td>
+                                    <td>tupa → tuvan (hut)</td>
+                                </tr>
+                                <tr>
+                                    <td>t</td>
+                                    <td>d</td>
+                                    <td>katu → kadun (street)</td>
+                                </tr>
+                                <tr>
+                                    <td>nk</td>
+                                    <td>ng</td>
+                                    <td>kenkä → kengän (shoe)</td>
+                                </tr>
+                                <tr>
+                                    <td>mp</td>
+                                    <td>mm</td>
+                                    <td>lampi → lammen (pond)</td>
+                                </tr>
+                                <tr>
+                                    <td>lt</td>
+                                    <td>ll</td>
+                                    <td>kulta → kullan (gold)</td>
+                                </tr>
+                                <tr>
+                                    <td>rt</td>
+                                    <td>rr</td>
+                                    <td>parta → parran (beard)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <h4>When Does Gradation Occur?</h4>
+                    <p>Consonant gradation typically occurs when:</p>
+                    <ul>
+                        <li>Adding case endings (genitive -n, partitive -a/-ä, etc.)</li>
+                        <li>Adding possessive suffixes</li>
+                        <li>In certain verb forms</li>
+                    </ul>
+                    
+                    <h4>Important Notes</h4>
+                    <ul>
+                        <li>Not all words undergo gradation - only words with k, p, or t in certain positions</li>
+                        <li>Gradation depends on the syllable structure of the word</li>
+                        <li>Some words have irregular gradation patterns</li>
+                        <li>Loanwords may not follow the gradation rules</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="interactive-exercises-section" id="interactive-exercises">
+                <!-- Interactive exercises will be loaded here by JavaScript -->
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Finnish Learning Resources</p>
+        </div>
+    </footer>
+    <script src="js/kpt-exercises.js"></script>
 </body>
 </html>'''
     return html
@@ -189,7 +371,7 @@ def generate_lesson_html(lesson):
 <body>
     <header>
         <div class="container">
-            <h1>YKI Test Lessons</h1>
+            <h1>Finnish Learning Resources</h1>
             <nav>
                 <a href="index.html">Home</a>
             </nav>
@@ -198,7 +380,7 @@ def generate_lesson_html(lesson):
     
     <main class="container">
         <div class="lesson-detail">
-    <a href="index.html" class="back-link">← Back to Catalog</a>
+    <a href="yki-test.html" class="back-link">← Back to YKI Test Catalog</a>
     <h2>{lesson_name}</h2>
     
     <div class="lesson-resources">
@@ -208,7 +390,7 @@ def generate_lesson_html(lesson):
     
     <footer>
         <div class="container">
-            <p>&copy; 2026 YKI Test Lessons</p>
+            <p>&copy; 2026 Finnish Learning Resources</p>
         </div>
     </footer>
 </body>
@@ -241,13 +423,29 @@ def main():
         print(f"Loaded {len(lessons)} lessons")
         lessons = sorted(lessons, key=lambda x: x.get('order', 999))
         
-        # Generate index.html
-        print("Generating index.html...")
-        index_html = generate_index_html(lessons)
-        index_path = output_dir / 'index.html'
-        with open(index_path, 'w', encoding='utf-8') as f:
-            f.write(index_html)
-        print(f"✅ Created {index_path}")
+        # Generate main index.html (landing page)
+        print("Generating main index.html...")
+        main_index_html = generate_main_index_html()
+        main_index_path = output_dir / 'index.html'
+        with open(main_index_path, 'w', encoding='utf-8') as f:
+            f.write(main_index_html)
+        print(f"✅ Created {main_index_path}")
+        
+        # Generate yki-test.html (lessons catalog)
+        print("Generating yki-test.html...")
+        yki_test_html = generate_yki_test_html(lessons)
+        yki_test_path = output_dir / 'yki-test.html'
+        with open(yki_test_path, 'w', encoding='utf-8') as f:
+            f.write(yki_test_html)
+        print(f"✅ Created {yki_test_path}")
+        
+        # Generate finnish-grammar.html
+        print("Generating finnish-grammar.html...")
+        grammar_html = generate_finnish_grammar_html()
+        grammar_path = output_dir / 'finnish-grammar.html'
+        with open(grammar_path, 'w', encoding='utf-8') as f:
+            f.write(grammar_html)
+        print(f"✅ Created {grammar_path}")
         
         # Generate individual lesson pages
         generated_count = 0
@@ -275,6 +473,22 @@ def main():
         shutil.copy(css_source, css_dir / 'style.css')
         print(f"✅ Copied CSS to {css_dir / 'style.css'}")
         
+        # Create JS directory and copy JavaScript file
+        js_dir = output_dir / 'js'
+        js_dir.mkdir(exist_ok=True)
+        js_source = Path('static/js/kpt-exercises.js')
+        if js_source.exists():
+            print("Copying JavaScript...")
+            shutil.copy(js_source, js_dir / 'kpt-exercises.js')
+            print(f"✅ Copied JavaScript to {js_dir / 'kpt-exercises.js'}")
+        else:
+            print(f"WARNING: JavaScript file not found at {js_source}")
+        
+        # Create .nojekyll file for GitHub Pages
+        nojekyll_file = output_dir / '.nojekyll'
+        nojekyll_file.touch()
+        print(f"✅ Created .nojekyll file for GitHub Pages")
+        
         # Verify output
         if not (output_dir / 'index.html').exists():
             print("ERROR: index.html was not created!")
@@ -285,8 +499,10 @@ def main():
             sys.exit(1)
         
         print(f"\n✅ Static site generated successfully in '{output_dir}' directory!")
-        print(f"   - {generated_count + 1} HTML files")
+        print(f"   - {generated_count + 3} HTML files (main index, yki-test, finnish-grammar, and {generated_count} lesson pages)")
         print(f"   - 1 CSS file")
+        if js_source.exists():
+            print(f"   - 1 JavaScript file")
         
     except FileNotFoundError as e:
         print(f"ERROR: File not found: {e}")
