@@ -301,10 +301,35 @@ function shuffleArray(array) {
     return shuffled;
 }
 
-// Get random 20 exercises
+// Get random 20 exercises without duplicate words
 function getRandomExercises() {
     const shuffled = shuffleArray(allExercises);
-    return shuffled.slice(0, 20);
+    const selected = [];
+    const usedWords = new Set();
+    
+    for (const exercise of shuffled) {
+        // Only add if we haven't used this word yet and we need more exercises
+        if (!usedWords.has(exercise.word) && selected.length < 20) {
+            selected.push(exercise);
+            usedWords.add(exercise.word);
+        }
+    }
+    
+    // If we don't have 20 unique words, fill with remaining exercises (allowing duplicates only if necessary)
+    if (selected.length < 20) {
+        for (const exercise of shuffled) {
+            if (selected.length >= 20) break;
+            // Check if this exact exercise (word + sentence combination) is already selected
+            const isDuplicate = selected.some(ex => 
+                ex.word === exercise.word && ex.sentence === exercise.sentence
+            );
+            if (!isDuplicate) {
+                selected.push(exercise);
+            }
+        }
+    }
+    
+    return selected.slice(0, 20);
 }
 
 // Initialize exercises when page loads

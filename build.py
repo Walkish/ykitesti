@@ -58,7 +58,7 @@ def generate_main_index_html():
                 <a href="finnish-grammar.html" class="section-card">
                     <div class="section-icon">📖</div>
                     <h3>Finnish Grammar</h3>
-                    <p>Learn Finnish grammar rules, including the K-P-T consonant gradation rule</p>
+                    <p>Learn Finnish grammar rules</p>
                 </a>
             </div>
         </div>
@@ -145,13 +145,59 @@ def generate_yki_test_html(lessons):
     return html
 
 def generate_finnish_grammar_html():
-    """Generate the Finnish grammar page with K-P-T rule"""
+    """Generate the Finnish grammar index page listing all grammar rules"""
     html = '''<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finnish Grammar - K-P-T Rule</title>
+    <title>Finnish Grammar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Finnish Learning Resources</h1>
+            <nav>
+                <a href="index.html">Home</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="grammar-index-page">
+            <a href="index.html" class="back-link">← Back to Home</a>
+            <h2>Finnish Grammar</h2>
+            <p class="intro-text">Select a grammar topic to learn:</p>
+            
+            <div class="grammar-rules-grid">
+                <a href="finnish-grammar-kpt.html" class="grammar-rule-card">
+                    <div class="rule-icon">📚</div>
+                    <h3>The K-P-T Rule</h3>
+                    <p class="rule-description">Consonant Gradation (KPT-sääntö)</p>
+                    <p class="rule-summary">Learn how consonants k, p, and t change in Finnish words</p>
+                </a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Finnish Learning Resources</p>
+        </div>
+    </footer>
+</body>
+</html>'''
+    return html
+
+def generate_finnish_grammar_kpt_html():
+    """Generate the K-P-T rule detail page with explanation and exercises"""
+    html = '''<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The K-P-T Rule - Finnish Grammar</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -166,14 +212,13 @@ def generate_finnish_grammar_html():
     
     <main class="container">
         <div class="grammar-page">
-            <a href="index.html" class="back-link">← Back to Home</a>
-            <h2>Finnish Grammar</h2>
+            <a href="finnish-grammar.html" class="back-link">← Back to Finnish Grammar</a>
+            <h2>The K-P-T Rule (KPT-sääntö)</h2>
             
             <section class="grammar-section">
-                <h3>The K-P-T Rule (KPT-sääntö)</h3>
+                <h3>What is Consonant Gradation?</h3>
                 
                 <div class="grammar-content">
-                    <h4>What is Consonant Gradation?</h4>
                     <p>Consonant gradation (astevaihtelu) is one of the most important features of Finnish grammar. It involves changing the consonants k, p, and t in the stem of a word when certain endings are added.</p>
                     
                     <h4>The Three Grades</h4>
@@ -439,13 +484,21 @@ def main():
             f.write(yki_test_html)
         print(f"✅ Created {yki_test_path}")
         
-        # Generate finnish-grammar.html
+        # Generate finnish-grammar.html (index page)
         print("Generating finnish-grammar.html...")
         grammar_html = generate_finnish_grammar_html()
         grammar_path = output_dir / 'finnish-grammar.html'
         with open(grammar_path, 'w', encoding='utf-8') as f:
             f.write(grammar_html)
         print(f"✅ Created {grammar_path}")
+        
+        # Generate finnish-grammar-kpt.html (KPT rule detail page)
+        print("Generating finnish-grammar-kpt.html...")
+        kpt_html = generate_finnish_grammar_kpt_html()
+        kpt_path = output_dir / 'finnish-grammar-kpt.html'
+        with open(kpt_path, 'w', encoding='utf-8') as f:
+            f.write(kpt_html)
+        print(f"✅ Created {kpt_path}")
         
         # Generate individual lesson pages
         generated_count = 0
@@ -499,7 +552,7 @@ def main():
             sys.exit(1)
         
         print(f"\n✅ Static site generated successfully in '{output_dir}' directory!")
-        print(f"   - {generated_count + 3} HTML files (main index, yki-test, finnish-grammar, and {generated_count} lesson pages)")
+        print(f"   - {generated_count + 4} HTML files (main index, yki-test, finnish-grammar index, finnish-grammar-kpt, and {generated_count} lesson pages)")
         print(f"   - 1 CSS file")
         if js_source.exists():
             print(f"   - 1 JavaScript file")
